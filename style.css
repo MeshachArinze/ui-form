@@ -1,0 +1,190 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+#container{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: rgb(76, 59, 173);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+    margin-bottom: -10vw;
+}
+#form-box{
+    display: flex;
+    flex-flow: wrap row;
+    max-height: 100%;
+}
+form{
+    display: flex;
+    width: 100%;
+}
+
+#form-1{
+    background: black;
+    width: 50%;
+    height: 70%;
+    display: block;
+    padding: 10px 5px;
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+    
+}
+
+
+
+#acc-name{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 500;
+    text-align: center;
+    line-height: 30px;
+    padding: 20px;
+}
+
+* label{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 400;
+    line-height: 20px;
+    display: block;
+}
+.input-text-box, .input-password-box, .input-password{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+[type="email"], [type="password"]{
+    border: none;
+    border-radius: 0;
+    outline: none;
+    border-bottom: 1px solid white;
+    background: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    padding: 5px 30px;
+    font-weight: 700;
+    line-height: 5px;
+    
+}
+
+.input-text-box [type="email"]:focus{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+
+#button{
+    display: grid;
+    place-items: center;
+    line-height: 70px;
+    position: relative;
+    top: -20px;
+    margin: 40px 0;
+}
+#button button{
+    padding: 5px 20px;
+    background-color: white;
+    color: black;
+    outline: none;
+    border: none;
+}
+
+@media screen and (max-width: 768px){
+    * label, span {
+        font-size: 1.5rem;
+        white-space: nowrap;
+    }
+
+    #form-1{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* STYLE THE SECOND FORM */
+
+#form-box-2{
+    background: white;
+    position: relative;
+    bottom: 30px;
+    width: 50%;
+    min-height: 62vh;
+    display: block;
+    padding: 10px 5px;
+}
+
+[for=""]{
+    color:black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 400;
+    line-height: 20px;
+    display: block;
+}
+
+.input-text, .input-pass{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 60px;
+    padding: 20px;
+}
+#user-email, #pass{
+    border: none;
+    border-radius: 0;
+    outline: none;
+    border-bottom: 1px solid black;
+    background: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    padding: 5px 30px;
+    font-weight: 700;
+    line-height: 5px;
+    float: left;
+}
+
+#user-email, #pass{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+.checked-box{
+    display: block;
+    position: relative;
+    top: 120px;
+    left: 20px;
+}
+[type="checkbox"]{
+    color: black;
+}
+
+
+.button{
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 150px;
+}
+.button button{
+    padding: 5px 20px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+}
